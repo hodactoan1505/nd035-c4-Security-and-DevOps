@@ -1,0 +1,1221 @@
+Started by user ToanHD4
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/UdacityProject4
+The recommended git tool is: NONE
+using credential 766ed843-56da-46f0-a475-d5086c0a0549
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/UdacityProject4/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/hodactoan1505/nd035-c4-Security-and-DevOps.git # timeout=10
+Fetching upstream changes from https://github.com/hodactoan1505/nd035-c4-Security-and-DevOps.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.36.1'
+using GIT_SSH to set credentials
+Verifying host key using known hosts file
+You're using 'Known hosts file' strategy to verify ssh host keys, but your known_hosts file does not exist, please go to 'Manage Jenkins' -> 'Configure Global Security' -> 'Git Host Key Verification Configuration' and configure host key verification.
+ > git fetch --tags --force --progress -- https://github.com/hodactoan1505/nd035-c4-Security-and-DevOps.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 12b5fdff9e2dc76278e8981f1f0ee2a7da75ea1a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 12b5fdff9e2dc76278e8981f1f0ee2a7da75ea1a # timeout=10
+Commit message: "Commit project"
+ > git rev-list --no-walk 0810814b38a7ed903d224382af862fdbfee6e156 # timeout=10
+[UdacityProject4] $ mvn -f starter_code/pom.xml package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:auth-course >-----------------------
+[INFO] Building auth-course 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/3.11.0/java-jwt-3.11.0.pom
+Progress (1): 1.8 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/3.11.0/java-jwt-3.11.0.pom (1.8 kB at 2.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/2.1.5.RELEASE/spring-boot-starter-security-2.1.5.RELEASE.pom
+Progress (1): 2.7/2.8 kB
+Progress (1): 2.8 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/2.1.5.RELEASE/spring-boot-starter-security-2.1.5.RELEASE.pom (2.8 kB at 54 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE.pom
+Progress (1): 2.7/16 kB
+Progress (1): 5.5/16 kB
+Progress (1): 8.2/16 kB
+Progress (1): 11/16 kB
+Progress (1): 14/16 kB
+Progress (1): 16/16 kB
+Progress (1): 16 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE.pom (16 kB at 470 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE.pom
+Progress (1): 2.7/6.8 kB
+Progress (1): 5.5/6.8 kB
+Progress (1): 6.8 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE.pom (6.8 kB at 309 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE.pom
+Progress (1): 2.7/8.5 kB
+Progress (1): 5.5/8.5 kB
+Progress (1): 8.2/8.5 kB
+Progress (1): 8.5 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE.pom (8.5 kB at 370 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-test/5.1.5.RELEASE/spring-security-test-5.1.5.RELEASE.pom
+Progress (1): 2.7/6.0 kB
+Progress (1): 5.5/6.0 kB
+Progress (1): 6.0 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-test/5.1.5.RELEASE/spring-security-test-5.1.5.RELEASE.pom (6.0 kB at 318 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.13.1/junit-4.13.1.pom
+Progress (1): 2.7/25 kB
+Progress (1): 5.5/25 kB
+Progress (1): 8.2/25 kB
+Progress (1): 11/25 kB
+Progress (1): 14/25 kB
+Progress (1): 16/25 kB
+Progress (1): 20/25 kB
+Progress (1): 24/25 kB
+Progress (1): 25 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.13.1/junit-4.13.1.pom (25 kB at 864 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.16/lombok-1.18.16.pom
+Progress (1): 1.5 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.16/lombok-1.18.16.pom (1.5 kB at 93 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.pom
+Progress (1): 1.1 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.pom (1.1 kB at 67 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.30/slf4j-parent-1.7.30.pom
+Progress (1): 4.1/14 kB
+Progress (1): 8.2/14 kB
+Progress (1): 12/14 kB
+Progress (1): 14 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.30/slf4j-parent-1.7.30.pom (14 kB at 920 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom
+Progress (1): 4.1/22 kB
+Progress (1): 8.2/22 kB
+Progress (1): 12/22 kB
+Progress (1): 16/22 kB
+Progress (1): 20/22 kB
+Progress (1): 22 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom (22 kB at 777 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/3.11.0/java-jwt-3.11.0.jar
+Progress (1): 4.1/56 kB
+Progress (1): 8.2/56 kB
+Progress (1): 12/56 kB
+
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/2.1.5.RELEASE/spring-boot-starter-security-2.1.5.RELEASE.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-test/5.1.5.RELEASE/spring-security-test-5.1.5.RELEASE.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE.jar
+Progress (1): 16/56 kB
+Progress (1): 20/56 kB
+Progress (1): 24/56 kB
+Progress (1): 28/56 kB
+Progress (1): 32/56 kB
+Progress (1): 36/56 kB
+Progress (1): 40/56 kB
+Progress (1): 45/56 kB
+Progress (2): 45/56 kB | 406 B
+Progress (3): 45/56 kB | 406 B | 4.1/779 kB
+Progress (3): 45/56 kB | 406 B | 8.2/779 kB
+Progress (3): 49/56 kB | 406 B | 8.2/779 kB
+Progress (3): 49/56 kB | 406 B | 12/779 kB
+Progress (3): 49/56 kB | 406 B | 16/779 kB
+Progress (4): 49/56 kB | 406 B | 16/779 kB | 2.7/71 kB
+Progress (4): 49/56 kB | 406 B | 16/779 kB | 5.5/71 kB
+Progress (4): 49/56 kB | 406 B | 16/779 kB | 8.2/71 kB
+Progress (4): 49/56 kB | 406 B | 16/779 kB | 11/71 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/2.1.5.RELEASE/spring-boot-starter-security-2.1.5.RELEASE.jar (406 B at 4.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE.jar
+Progress (3): 49/56 kB | 16/779 kB | 14/71 kB
+Progress (4): 49/56 kB | 16/779 kB | 14/71 kB | 2.7/433 kB
+Progress (4): 49/56 kB | 20/779 kB | 14/71 kB | 2.7/433 kB
+Progress (4): 53/56 kB | 20/779 kB | 14/71 kB | 2.7/433 kB
+Progress (4): 56 kB | 20/779 kB | 14/71 kB | 2.7/433 kB
+Progress (5): 56 kB | 20/779 kB | 14/71 kB | 2.7/433 kB | 2.7/538 kB
+Progress (5): 56 kB | 20/779 kB | 14/71 kB | 2.7/433 kB | 5.5/538 kB
+Progress (5): 56 kB | 20/779 kB | 14/71 kB | 2.7/433 kB | 8.2/538 kB
+Progress (5): 56 kB | 20/779 kB | 14/71 kB | 2.7/433 kB | 11/538 kB
+Progress (5): 56 kB | 20/779 kB | 16/71 kB | 2.7/433 kB | 11/538 kB
+Progress (5): 56 kB | 20/779 kB | 20/71 kB | 2.7/433 kB | 11/538 kB
+Progress (5): 56 kB | 20/779 kB | 20/71 kB | 5.5/433 kB | 11/538 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/com/auth0/java-jwt/3.11.0/java-jwt-3.11.0.jar (56 kB at 448 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.13.1/junit-4.13.1.jar
+Progress (4): 25/779 kB | 20/71 kB | 5.5/433 kB | 11/538 kB
+Progress (4): 29/779 kB | 20/71 kB | 5.5/433 kB | 11/538 kB
+Progress (4): 33/779 kB | 20/71 kB | 5.5/433 kB | 11/538 kB
+Progress (4): 33/779 kB | 20/71 kB | 8.2/433 kB | 11/538 kB
+Progress (4): 33/779 kB | 20/71 kB | 11/433 kB | 11/538 kB
+Progress (4): 33/779 kB | 20/71 kB | 11/433 kB | 14/538 kB
+Progress (4): 33/779 kB | 20/71 kB | 11/433 kB | 16/538 kB
+Progress (4): 33/779 kB | 20/71 kB | 11/433 kB | 20/538 kB
+Progress (4): 33/779 kB | 24/71 kB | 11/433 kB | 20/538 kB
+Progress (4): 33/779 kB | 28/71 kB | 11/433 kB | 20/538 kB
+Progress (4): 33/779 kB | 32/71 kB | 11/433 kB | 20/538 kB
+Progress (4): 37/779 kB | 32/71 kB | 11/433 kB | 20/538 kB
+Progress (4): 41/779 kB | 32/71 kB | 11/433 kB | 20/538 kB
+Progress (4): 45/779 kB | 32/71 kB | 11/433 kB | 20/538 kB
+Progress (4): 49/779 kB | 32/71 kB | 11/433 kB | 20/538 kB
+Progress (4): 53/779 kB | 32/71 kB | 11/433 kB | 20/538 kB
+Progress (5): 53/779 kB | 32/71 kB | 11/433 kB | 20/538 kB | 4.1/383 kB
+Progress (5): 53/779 kB | 32/71 kB | 11/433 kB | 20/538 kB | 8.2/383 kB
+Progress (5): 53/779 kB | 32/71 kB | 11/433 kB | 20/538 kB | 12/383 kB
+Progress (5): 53/779 kB | 32/71 kB | 11/433 kB | 20/538 kB | 16/383 kB
+Progress (5): 53/779 kB | 32/71 kB | 11/433 kB | 20/538 kB | 20/383 kB
+Progress (5): 53/779 kB | 32/71 kB | 11/433 kB | 20/538 kB | 24/383 kB
+Progress (5): 53/779 kB | 32/71 kB | 14/433 kB | 20/538 kB | 24/383 kB
+Progress (5): 53/779 kB | 32/71 kB | 16/433 kB | 20/538 kB | 24/383 kB
+Progress (5): 53/779 kB | 32/71 kB | 20/433 kB | 20/538 kB | 24/383 kB
+Progress (5): 53/779 kB | 32/71 kB | 24/433 kB | 20/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 32/71 kB | 24/433 kB | 20/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 36/71 kB | 24/433 kB | 20/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 40/71 kB | 24/433 kB | 20/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 45/71 kB | 24/433 kB | 20/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 49/71 kB | 24/433 kB | 20/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 49/71 kB | 24/433 kB | 24/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 49/71 kB | 24/433 kB | 28/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 49/71 kB | 24/433 kB | 32/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 49/71 kB | 24/433 kB | 36/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 49/71 kB | 24/433 kB | 40/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 49/71 kB | 24/433 kB | 45/538 kB | 24/383 kB
+Progress (5): 57/779 kB | 49/71 kB | 24/433 kB | 45/538 kB | 28/383 kB
+Progress (5): 57/779 kB | 49/71 kB | 24/433 kB | 45/538 kB | 32/383 kB
+Progress (5): 57/779 kB | 49/71 kB | 24/433 kB | 45/538 kB | 36/383 kB
+Progress (5): 57/779 kB | 53/71 kB | 24/433 kB | 45/538 kB | 36/383 kB
+Progress (5): 57/779 kB | 53/71 kB | 28/433 kB | 45/538 kB | 36/383 kB
+Progress (5): 61/779 kB | 53/71 kB | 28/433 kB | 45/538 kB | 36/383 kB
+Progress (5): 66/779 kB | 53/71 kB | 28/433 kB | 45/538 kB | 36/383 kB
+Progress (5): 70/779 kB | 53/71 kB | 28/433 kB | 45/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 53/71 kB | 28/433 kB | 45/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 53/71 kB | 32/433 kB | 45/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 53/71 kB | 36/433 kB | 45/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 53/71 kB | 36/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 57/71 kB | 36/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 61/71 kB | 36/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 65/71 kB | 36/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 69/71 kB | 36/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 71 kB | 36/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 71 kB | 40/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 74/779 kB | 71 kB | 45/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 78/779 kB | 71 kB | 45/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 82/779 kB | 71 kB | 45/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 86/779 kB | 71 kB | 45/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 90/779 kB | 71 kB | 45/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 94/779 kB | 71 kB | 45/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 49/538 kB | 36/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 53/538 kB | 36/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 57/538 kB | 36/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 61/538 kB | 36/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 65/538 kB | 36/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 65/538 kB | 40/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 65/538 kB | 45/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 65/538 kB | 49/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 65/538 kB | 53/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 65/538 kB | 57/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 65/538 kB | 61/383 kB
+Progress (5): 98/779 kB | 71 kB | 45/433 kB | 65/538 kB | 65/383 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-test/5.1.5.RELEASE/spring-security-test-5.1.5.RELEASE.jar (71 kB at 333 kB/s)
+Progress (4): 98/779 kB | 49/433 kB | 65/538 kB | 65/383 kB
+Progress (4): 98/779 kB | 53/433 kB | 65/538 kB | 65/383 kB
+Progress (4): 98/779 kB | 57/433 kB | 65/538 kB | 65/383 kB
+Progress (4): 98/779 kB | 61/433 kB | 65/538 kB | 65/383 kB
+
+Downloading from central: https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar
+Progress (4): 98/779 kB | 65/433 kB | 65/538 kB | 65/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 65/538 kB | 65/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 69/538 kB | 65/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 73/538 kB | 65/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 77/538 kB | 65/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 81/538 kB | 65/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 86/538 kB | 65/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 90/538 kB | 65/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 94/538 kB | 65/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 94/538 kB | 69/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 94/538 kB | 73/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 94/538 kB | 77/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 94/538 kB | 81/383 kB
+Progress (4): 102/779 kB | 65/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 102/779 kB | 69/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 102/779 kB | 73/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 102/779 kB | 77/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 102/779 kB | 81/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 102/779 kB | 86/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 102/779 kB | 90/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 102/779 kB | 94/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 102/779 kB | 98/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 106/779 kB | 98/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 111/779 kB | 98/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 115/779 kB | 98/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 119/779 kB | 98/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 123/779 kB | 98/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 127/779 kB | 98/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 131/779 kB | 98/433 kB | 94/538 kB | 86/383 kB
+Progress (4): 131/779 kB | 98/433 kB | 98/538 kB | 86/383 kB
+Progress (5): 131/779 kB | 98/433 kB | 98/538 kB | 86/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 98/538 kB | 86/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 98/538 kB | 90/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 98/538 kB | 94/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 98/538 kB | 98/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 98/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 102/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 106/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 110/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 114/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 118/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 122/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 98/433 kB | 126/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 102/433 kB | 126/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 106/433 kB | 126/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 110/433 kB | 126/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 114/433 kB | 126/538 kB | 102/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 114/433 kB | 126/538 kB | 106/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 114/433 kB | 126/538 kB | 110/383 kB | 0/1.9 MB
+Progress (5): 131/779 kB | 114/433 kB | 126/538 kB | 110/383 kB | 0/1.9 MB
+Progress (5): 135/779 kB | 114/433 kB | 126/538 kB | 110/383 kB | 0/1.9 MB
+Progress (5): 139/779 kB | 114/433 kB | 126/538 kB | 110/383 kB | 0/1.9 MB
+Progress (5): 143/779 kB | 114/433 kB | 126/538 kB | 110/383 kB | 0/1.9 MB
+Progress (5): 147/779 kB | 114/433 kB | 126/538 kB | 110/383 kB | 0/1.9 MB
+Progress (5): 152/779 kB | 114/433 kB | 126/538 kB | 110/383 kB | 0/1.9 MB
+Progress (5): 152/779 kB | 114/433 kB | 126/538 kB | 110/383 kB | 0/1.9 MB
+Progress (5): 152/779 kB | 114/433 kB | 126/538 kB | 110/383 kB | 0/1.9 MB
+Progress (5): 152/779 kB | 114/433 kB | 126/538 kB | 110/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 114/433 kB | 126/538 kB | 114/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 114/433 kB | 126/538 kB | 118/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 114/433 kB | 126/538 kB | 122/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 114/433 kB | 126/538 kB | 126/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 114/433 kB | 126/538 kB | 131/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 114/433 kB | 126/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 126/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 131/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 135/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 139/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 143/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 147/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 151/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 155/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 159/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 152/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 156/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 160/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 164/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 168/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 172/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 176/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 118/433 kB | 163/538 kB | 135/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 118/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 122/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 126/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 131/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 135/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 139/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 143/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 147/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 151/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 155/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 159/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 180/779 kB | 163/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 184/779 kB | 163/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 188/779 kB | 163/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 193/779 kB | 163/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 197/779 kB | 163/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 163/433 kB | 163/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 163/433 kB | 167/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 163/433 kB | 172/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 163/433 kB | 176/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 163/433 kB | 180/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 163/433 kB | 184/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 163/433 kB | 188/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 163/433 kB | 192/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 163/433 kB | 196/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 163/433 kB | 200/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 139/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 143/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 147/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 151/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 155/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 159/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 163/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 167/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 172/383 kB | 0.1/1.9 MB
+Progress (5): 201/779 kB | 167/433 kB | 200/538 kB | 176/383 kB | 0.1/1.9 MB
+Progress (5): 205/779 kB | 167/433 kB | 200/538 kB | 176/383 kB | 0.1/1.9 MB
+Progress (5): 209/779 kB | 167/433 kB | 200/538 kB | 176/383 kB | 0.1/1.9 MB
+Progress (5): 213/779 kB | 167/433 kB | 200/538 kB | 176/383 kB | 0.1/1.9 MB
+Progress (5): 217/779 kB | 167/433 kB | 200/538 kB | 176/383 kB | 0.1/1.9 MB
+Progress (5): 221/779 kB | 167/433 kB | 200/538 kB | 176/383 kB | 0.1/1.9 MB
+Progress (5): 225/779 kB | 167/433 kB | 200/538 kB | 176/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 200/538 kB | 176/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 200/538 kB | 180/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 200/538 kB | 184/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 200/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 200/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 204/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 208/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 212/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 217/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 221/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 225/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 229/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 167/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 172/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 176/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 180/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 184/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 188/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 192/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 196/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 200/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 229/779 kB | 204/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 233/779 kB | 204/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 238/779 kB | 204/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 242/779 kB | 204/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 246/779 kB | 204/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 250/779 kB | 204/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 250/779 kB | 204/433 kB | 233/538 kB | 188/383 kB | 0.1/1.9 MB
+Progress (5): 250/779 kB | 204/433 kB | 233/538 kB | 188/383 kB | 0.2/1.9 MB
+Progress (5): 250/779 kB | 204/433 kB | 233/538 kB | 188/383 kB | 0.2/1.9 MB
+Progress (5): 250/779 kB | 204/433 kB | 233/538 kB | 188/383 kB | 0.2/1.9 MB
+Progress (5): 250/779 kB | 208/433 kB | 233/538 kB | 188/383 kB | 0.2/1.9 MB
+Progress (5): 250/779 kB | 212/433 kB | 233/538 kB | 188/383 kB | 0.2/1.9 MB
+Progress (5): 250/779 kB | 217/433 kB | 233/538 kB | 188/383 kB | 0.2/1.9 MB
+Progress (5): 254/779 kB | 217/433 kB | 233/538 kB | 188/383 kB | 0.2/1.9 MB
+Progress (5): 254/779 kB | 217/433 kB | 233/538 kB | 192/383 kB | 0.2/1.9 MB
+Progress (5): 254/779 kB | 217/433 kB | 233/538 kB | 196/383 kB | 0.2/1.9 MB
+Progress (5): 254/779 kB | 217/433 kB | 233/538 kB | 200/383 kB | 0.2/1.9 MB
+Progress (5): 254/779 kB | 217/433 kB | 233/538 kB | 204/383 kB | 0.2/1.9 MB
+Progress (5): 254/779 kB | 217/433 kB | 233/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 258/779 kB | 217/433 kB | 233/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 262/779 kB | 217/433 kB | 233/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 266/779 kB | 217/433 kB | 233/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 270/779 kB | 217/433 kB | 233/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 217/433 kB | 233/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 217/433 kB | 233/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 217/433 kB | 237/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 217/433 kB | 241/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 217/433 kB | 245/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 217/433 kB | 249/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 217/433 kB | 253/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 217/433 kB | 258/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 217/433 kB | 262/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 217/433 kB | 266/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 221/433 kB | 266/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 225/433 kB | 266/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 229/433 kB | 266/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 233/433 kB | 266/538 kB | 208/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 233/433 kB | 266/538 kB | 212/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 233/433 kB | 266/538 kB | 217/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 233/433 kB | 266/538 kB | 221/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 233/433 kB | 266/538 kB | 225/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 233/433 kB | 266/538 kB | 229/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 233/433 kB | 266/538 kB | 233/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 233/433 kB | 266/538 kB | 237/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 233/433 kB | 266/538 kB | 241/383 kB | 0.2/1.9 MB
+Progress (5): 274/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 279/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 283/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 287/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 291/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 295/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 299/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 303/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 307/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 311/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 315/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 319/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 324/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 328/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 332/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 245/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 249/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 253/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 258/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 262/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 266/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 270/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 274/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 278/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 282/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 286/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 266/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 270/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 274/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 278/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 282/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 286/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 290/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 294/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 299/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 303/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 307/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 233/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 237/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 241/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 245/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 249/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 253/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 258/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 262/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 266/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 270/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 274/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 336/779 kB | 278/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 340/779 kB | 278/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 344/779 kB | 278/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 348/779 kB | 278/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 352/779 kB | 278/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 278/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 282/433 kB | 311/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 282/433 kB | 315/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 282/433 kB | 319/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 282/433 kB | 323/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 282/433 kB | 323/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 282/433 kB | 323/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 286/433 kB | 323/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 290/433 kB | 323/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 294/433 kB | 323/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 323/538 kB | 290/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 323/538 kB | 294/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 323/538 kB | 299/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 323/538 kB | 303/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 323/538 kB | 307/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 323/538 kB | 311/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 323/538 kB | 315/383 kB | 0.2/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 323/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 323/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 323/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 327/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 331/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 356/779 kB | 299/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 356/779 kB | 303/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 356/779 kB | 307/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 356/779 kB | 311/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 356/779 kB | 315/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 360/779 kB | 315/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 365/779 kB | 315/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 369/779 kB | 315/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 373/779 kB | 315/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 377/779 kB | 315/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 315/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 315/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 315/433 kB | 335/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 315/433 kB | 339/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 315/433 kB | 344/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 315/433 kB | 348/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 315/433 kB | 352/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 315/433 kB | 356/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 315/433 kB | 360/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 315/433 kB | 364/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 319/433 kB | 364/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 315/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 319/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 323/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 327/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 331/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 335/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 339/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 344/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 348/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 352/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 356/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 323/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 327/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 331/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 335/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 381/779 kB | 339/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 385/779 kB | 339/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 389/779 kB | 339/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 393/779 kB | 339/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 393/779 kB | 339/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 393/779 kB | 339/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 393/779 kB | 339/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 393/779 kB | 339/433 kB | 364/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 393/779 kB | 339/433 kB | 368/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 393/779 kB | 339/433 kB | 372/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 393/779 kB | 339/433 kB | 376/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 393/779 kB | 339/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 397/779 kB | 339/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 401/779 kB | 339/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 406/779 kB | 339/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 339/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 344/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 348/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 352/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 356/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 360/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 380/538 kB | 360/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 380/538 kB | 364/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 380/538 kB | 368/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 380/538 kB | 372/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 380/538 kB | 376/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 380/538 kB | 376/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 380/538 kB | 376/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 380/538 kB | 376/383 kB | 0.3/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 380/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 385/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 389/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 393/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 397/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 401/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 405/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 364/433 kB | 409/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 368/433 kB | 409/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 372/433 kB | 409/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 376/433 kB | 409/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 380/433 kB | 409/538 kB | 376/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 380/433 kB | 409/538 kB | 380/383 kB | 0.4/1.9 MB
+Progress (5): 410/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 414/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 418/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 422/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 426/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 430/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 434/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 438/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 442/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 446/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 451/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 455/779 kB | 380/433 kB | 409/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 455/779 kB | 380/433 kB | 413/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 455/779 kB | 380/433 kB | 417/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 455/779 kB | 380/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 455/779 kB | 380/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 455/779 kB | 380/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 455/779 kB | 380/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 455/779 kB | 380/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 455/779 kB | 380/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 455/779 kB | 380/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 459/779 kB | 380/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 463/779 kB | 380/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 463/779 kB | 385/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 463/779 kB | 389/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 463/779 kB | 393/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 463/779 kB | 397/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 463/779 kB | 401/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 463/779 kB | 405/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+Progress (5): 463/779 kB | 409/433 kB | 421/538 kB | 383 kB | 0.4/1.9 MB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.13.1/junit-4.13.1.jar (383 kB at 728 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar
+Progress (4): 467/779 kB | 409/433 kB | 421/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 409/433 kB | 425/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 409/433 kB | 430/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 409/433 kB | 434/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 409/433 kB | 438/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 409/433 kB | 442/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 409/433 kB | 446/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 409/433 kB | 450/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 409/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 413/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 417/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 467/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 471/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 475/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 479/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 483/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 487/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 492/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 496/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 496/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 496/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (4): 496/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB
+Progress (5): 496/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB | 4.1/12 kB
+Progress (5): 496/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB | 8.2/12 kB
+Progress (5): 496/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB | 12 kB
+Progress (5): 500/779 kB | 421/433 kB | 454/538 kB | 0.4/1.9 MB | 12 kB
+Progress (5): 500/779 kB | 421/433 kB | 458/538 kB | 0.4/1.9 MB | 12 kB
+Progress (5): 500/779 kB | 421/433 kB | 462/538 kB | 0.4/1.9 MB | 12 kB
+Progress (5): 500/779 kB | 421/433 kB | 466/538 kB | 0.4/1.9 MB | 12 kB
+Progress (5): 500/779 kB | 421/433 kB | 471/538 kB | 0.4/1.9 MB | 12 kB
+Progress (5): 500/779 kB | 425/433 kB | 471/538 kB | 0.4/1.9 MB | 12 kB
+Progress (5): 500/779 kB | 430/433 kB | 471/538 kB | 0.4/1.9 MB | 12 kB
+Progress (5): 500/779 kB | 433 kB | 471/538 kB | 0.4/1.9 MB | 12 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar (12 kB at 22 kB/s)
+Progress (4): 504/779 kB | 433 kB | 471/538 kB | 0.4/1.9 MB
+Progress (4): 508/779 kB | 433 kB | 471/538 kB | 0.4/1.9 MB
+Progress (4): 512/779 kB | 433 kB | 471/538 kB | 0.4/1.9 MB
+Progress (4): 512/779 kB | 433 kB | 471/538 kB | 0.4/1.9 MB
+Progress (4): 512/779 kB | 433 kB | 471/538 kB | 0.4/1.9 MB
+Progress (4): 512/779 kB | 433 kB | 471/538 kB | 0.5/1.9 MB
+Progress (4): 512/779 kB | 433 kB | 471/538 kB | 0.5/1.9 MB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE.jar (433 kB at 776 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+Progress (3): 512/779 kB | 475/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 479/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 483/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 487/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 491/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 495/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 499/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 503/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 507/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 511/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 516/538 kB | 0.5/1.9 MB
+Progress (3): 512/779 kB | 516/538 kB | 0.5/1.9 MB
+Progress (3): 516/779 kB | 516/538 kB | 0.5/1.9 MB
+Progress (3): 520/779 kB | 516/538 kB | 0.5/1.9 MB
+Progress (3): 524/779 kB | 516/538 kB | 0.5/1.9 MB
+Progress (3): 524/779 kB | 520/538 kB | 0.5/1.9 MB
+Progress (3): 524/779 kB | 524/538 kB | 0.5/1.9 MB
+Progress (3): 524/779 kB | 528/538 kB | 0.5/1.9 MB
+Progress (3): 528/779 kB | 528/538 kB | 0.5/1.9 MB
+Progress (3): 532/779 kB | 528/538 kB | 0.5/1.9 MB
+Progress (3): 537/779 kB | 528/538 kB | 0.5/1.9 MB
+Progress (3): 541/779 kB | 528/538 kB | 0.5/1.9 MB
+Progress (4): 541/779 kB | 528/538 kB | 0.5/1.9 MB | 4.1/490 kB
+Progress (4): 541/779 kB | 528/538 kB | 0.5/1.9 MB | 8.2/490 kB
+Progress (4): 541/779 kB | 528/538 kB | 0.5/1.9 MB | 12/490 kB
+Progress (4): 541/779 kB | 528/538 kB | 0.5/1.9 MB | 16/490 kB
+Progress (4): 541/779 kB | 528/538 kB | 0.5/1.9 MB | 16/490 kB
+Progress (4): 541/779 kB | 528/538 kB | 0.5/1.9 MB | 16/490 kB
+Progress (4): 541/779 kB | 532/538 kB | 0.5/1.9 MB | 16/490 kB
+Progress (4): 541/779 kB | 536/538 kB | 0.5/1.9 MB | 16/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 16/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 20/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 25/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 29/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 33/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 37/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 41/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 45/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 49/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 53/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 57/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 61/490 kB
+Progress (4): 541/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 545/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 549/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 553/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 557/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 561/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 565/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 569/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 573/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 578/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 582/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 586/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 590/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 590/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 590/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 590/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 590/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 590/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 590/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 590/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+Progress (4): 590/779 kB | 538 kB | 0.5/1.9 MB | 66/490 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE.jar (538 kB at 881 kB/s)
+Progress (3): 594/779 kB | 0.5/1.9 MB | 66/490 kB
+Progress (3): 598/779 kB | 0.5/1.9 MB | 66/490 kB
+Progress (3): 602/779 kB | 0.5/1.9 MB | 66/490 kB
+Progress (3): 606/779 kB | 0.5/1.9 MB | 66/490 kB
+Progress (3): 610/779 kB | 0.5/1.9 MB | 66/490 kB
+Progress (3): 614/779 kB | 0.5/1.9 MB | 66/490 kB
+Progress (3): 618/779 kB | 0.5/1.9 MB | 66/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 66/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 66/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 70/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 74/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 78/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 82/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 86/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 90/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 94/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 98/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 102/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 106/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 111/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 618/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 623/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 627/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 631/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 635/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 639/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 643/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 647/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 115/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 119/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 123/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 127/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 131/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 135/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 139/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 143/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 651/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 655/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 659/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 664/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 668/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 672/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 676/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 680/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 684/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 688/779 kB | 0.6/1.9 MB | 147/490 kB
+Progress (3): 688/779 kB | 0.6/1.9 MB | 152/490 kB
+Progress (3): 688/779 kB | 0.6/1.9 MB | 156/490 kB
+Progress (3): 688/779 kB | 0.6/1.9 MB | 160/490 kB
+Progress (3): 688/779 kB | 0.6/1.9 MB | 164/490 kB
+Progress (3): 688/779 kB | 0.6/1.9 MB | 164/490 kB
+Progress (3): 688/779 kB | 0.6/1.9 MB | 164/490 kB
+Progress (3): 688/779 kB | 0.6/1.9 MB | 164/490 kB
+Progress (3): 688/779 kB | 0.6/1.9 MB | 164/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 164/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 164/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 168/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 172/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 176/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 180/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 184/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 188/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 193/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 197/490 kB
+Progress (3): 688/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 692/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 696/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 700/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 705/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 709/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 713/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 717/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 721/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 201/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 205/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 209/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 213/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 217/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 221/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 225/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 229/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 725/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 729/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 733/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 737/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 741/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 745/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 750/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 754/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 758/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 762/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 766/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 770/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 774/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 778/779 kB | 0.7/1.9 MB | 233/490 kB
+Progress (3): 778/779 kB | 0.7/1.9 MB | 238/490 kB
+Progress (3): 778/779 kB | 0.7/1.9 MB | 242/490 kB
+Progress (3): 778/779 kB | 0.7/1.9 MB | 246/490 kB
+Progress (3): 778/779 kB | 0.7/1.9 MB | 250/490 kB
+Progress (3): 778/779 kB | 0.7/1.9 MB | 250/490 kB
+Progress (3): 778/779 kB | 0.7/1.9 MB | 250/490 kB
+Progress (3): 778/779 kB | 0.7/1.9 MB | 250/490 kB
+Progress (3): 778/779 kB | 0.8/1.9 MB | 250/490 kB
+Progress (3): 778/779 kB | 0.8/1.9 MB | 250/490 kB
+Progress (3): 778/779 kB | 0.8/1.9 MB | 250/490 kB
+Progress (3): 778/779 kB | 0.8/1.9 MB | 250/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 250/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 254/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 258/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 262/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 266/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 270/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 274/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 279/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 283/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 287/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 291/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 295/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 299/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 303/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 303/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 303/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 303/490 kB
+Progress (3): 779 kB | 0.8/1.9 MB | 303/490 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE.jar (779 kB at 1.1 MB/s)
+Progress (2): 0.8/1.9 MB | 307/490 kB
+Progress (2): 0.8/1.9 MB | 311/490 kB
+Progress (2): 0.8/1.9 MB | 315/490 kB
+Progress (2): 0.8/1.9 MB | 319/490 kB
+Progress (2): 0.8/1.9 MB | 324/490 kB
+Progress (2): 0.8/1.9 MB | 328/490 kB
+Progress (2): 0.8/1.9 MB | 332/490 kB
+Progress (2): 0.8/1.9 MB | 332/490 kB
+Progress (2): 0.8/1.9 MB | 332/490 kB
+Progress (2): 0.8/1.9 MB | 332/490 kB
+Progress (2): 0.8/1.9 MB | 332/490 kB
+Progress (2): 0.9/1.9 MB | 332/490 kB
+Progress (2): 0.9/1.9 MB | 332/490 kB
+Progress (2): 0.9/1.9 MB | 332/490 kB
+Progress (2): 0.9/1.9 MB | 336/490 kB
+Progress (2): 0.9/1.9 MB | 340/490 kB
+Progress (2): 0.9/1.9 MB | 344/490 kB
+Progress (2): 0.9/1.9 MB | 348/490 kB
+Progress (2): 0.9/1.9 MB | 352/490 kB
+Progress (2): 0.9/1.9 MB | 356/490 kB
+Progress (2): 0.9/1.9 MB | 360/490 kB
+Progress (2): 0.9/1.9 MB | 365/490 kB
+Progress (2): 0.9/1.9 MB | 369/490 kB
+Progress (2): 0.9/1.9 MB | 373/490 kB
+Progress (2): 0.9/1.9 MB | 377/490 kB
+Progress (2): 0.9/1.9 MB | 381/490 kB
+Progress (2): 0.9/1.9 MB | 381/490 kB
+Progress (2): 0.9/1.9 MB | 381/490 kB
+Progress (2): 0.9/1.9 MB | 381/490 kB
+Progress (2): 0.9/1.9 MB | 381/490 kB
+Progress (2): 0.9/1.9 MB | 381/490 kB
+Progress (2): 0.9/1.9 MB | 381/490 kB
+Progress (2): 0.9/1.9 MB | 385/490 kB
+Progress (2): 0.9/1.9 MB | 389/490 kB
+Progress (2): 0.9/1.9 MB | 393/490 kB
+Progress (2): 0.9/1.9 MB | 397/490 kB
+Progress (2): 0.9/1.9 MB | 401/490 kB
+Progress (2): 0.9/1.9 MB | 406/490 kB
+Progress (2): 0.9/1.9 MB | 410/490 kB
+Progress (2): 0.9/1.9 MB | 414/490 kB
+Progress (2): 0.9/1.9 MB | 418/490 kB
+Progress (2): 0.9/1.9 MB | 422/490 kB
+Progress (2): 0.9/1.9 MB | 426/490 kB
+Progress (2): 0.9/1.9 MB | 426/490 kB
+Progress (2): 0.9/1.9 MB | 426/490 kB
+Progress (2): 0.9/1.9 MB | 426/490 kB
+Progress (2): 1.0/1.9 MB | 426/490 kB
+Progress (2): 1.0/1.9 MB | 426/490 kB
+Progress (2): 1.0/1.9 MB | 426/490 kB
+Progress (2): 1.0/1.9 MB | 430/490 kB
+Progress (2): 1.0/1.9 MB | 434/490 kB
+Progress (2): 1.0/1.9 MB | 438/490 kB
+Progress (2): 1.0/1.9 MB | 442/490 kB
+Progress (2): 1.0/1.9 MB | 446/490 kB
+Progress (2): 1.0/1.9 MB | 451/490 kB
+Progress (2): 1.0/1.9 MB | 455/490 kB
+Progress (2): 1.0/1.9 MB | 459/490 kB
+Progress (2): 1.0/1.9 MB | 463/490 kB
+Progress (2): 1.0/1.9 MB | 467/490 kB
+Progress (2): 1.0/1.9 MB | 471/490 kB
+Progress (2): 1.0/1.9 MB | 475/490 kB
+Progress (2): 1.0/1.9 MB | 479/490 kB
+Progress (2): 1.0/1.9 MB | 479/490 kB
+Progress (2): 1.0/1.9 MB | 479/490 kB
+Progress (2): 1.0/1.9 MB | 479/490 kB
+Progress (2): 1.0/1.9 MB | 479/490 kB
+Progress (2): 1.0/1.9 MB | 479/490 kB
+Progress (2): 1.0/1.9 MB | 479/490 kB
+Progress (2): 1.0/1.9 MB | 483/490 kB
+Progress (2): 1.0/1.9 MB | 487/490 kB
+Progress (2): 1.0/1.9 MB | 490 kB
+Progress (2): 1.0/1.9 MB | 490 kB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar (490 kB at 667 kB/s)
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.9/1.9 MB
+Progress (1): 1.9/1.9 MB
+Progress (1): 1.9/1.9 MB
+Progress (1): 1.9/1.9 MB
+Progress (1): 1.9/1.9 MB
+Progress (1): 1.9/1.9 MB
+Progress (1): 1.9/1.9 MB
+Progress (1): 1.9/1.9 MB
+Progress (1): 1.9 MB
+
+Downloaded from central: https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar (1.9 MB at 2.2 MB/s)
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ auth-course ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ auth-course ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /var/jenkins_home/workspace/UdacityProject4/starter_code/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ auth-course ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/UdacityProject4/starter_code/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ auth-course ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /var/jenkins_home/workspace/UdacityProject4/starter_code/target/test-classes
+[INFO] /var/jenkins_home/workspace/UdacityProject4/starter_code/src/test/java/com/example/demo/controllers/CartControllerTest.java: Some input files use or override a deprecated API.
+[INFO] /var/jenkins_home/workspace/UdacityProject4/starter_code/src/test/java/com/example/demo/controllers/CartControllerTest.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ auth-course ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.demo.SareetaApplicationTests
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+15:09:38.891 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.demo.SareetaApplicationTests]
+15:09:38.909 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:09:38.945 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:09:39.032 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.demo.SareetaApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:09:39.071 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.SareetaApplicationTests], using SpringBootContextLoader
+15:09:39.084 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.SareetaApplicationTests]: class path resource [com/example/demo/SareetaApplicationTests-context.xml] does not exist
+15:09:39.088 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.SareetaApplicationTests]: class path resource [com/example/demo/SareetaApplicationTestsContext.groovy] does not exist
+15:09:39.088 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.SareetaApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:09:39.089 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.SareetaApplicationTests]: SareetaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:09:39.206 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.demo.SareetaApplicationTests]
+15:09:39.388 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/var/jenkins_home/workspace/UdacityProject4/starter_code/target/classes/com/example/demo/SareetaApplication.class]
+15:09:39.391 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.SareetaApplication for test class com.example.demo.SareetaApplicationTests
+15:09:39.617 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.demo.SareetaApplicationTests]: using defaults.
+15:09:39.626 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+15:09:39.664 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@16b2bb0c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@327af41b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6cb6decd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@c7045b9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f99f5e0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6aa61224, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@30bce90b, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3e6f3f28, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@7e19ebf0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2474f125, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7357a011, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3406472c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5717c37, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@68f4865]
+15:09:39.680 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+15:09:39.683 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+15:09:39.684 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+15:09:39.688 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+15:09:39.688 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+15:09:39.688 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+15:09:39.692 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+15:09:39.692 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+15:09:39.693 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+15:09:39.693 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+15:09:39.707 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2141a12 testClass = SareetaApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4196c360 testClass = SareetaApplicationTests, locations = '{}', classes = '{class com.example.demo.SareetaApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@568ff82, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5ab9e72c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6497b078, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2892dae4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+15:09:39.715 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+15:09:39.715 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+15:09:39.762 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+15:09:40.996 [INFO] [c.e.demo.SareetaApplicationTests][Method logStarting] - Starting SareetaApplicationTests on 67632fa3b0c0 with PID 3357 (started by root in /var/jenkins_home/workspace/UdacityProject4/starter_code)
+15:09:41.012 [INFO] [c.e.demo.SareetaApplicationTests][Method logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+15:09:42.890 [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate][Method registerRepositoriesIn] - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:09:43.056 [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate][Method registerRepositoriesIn] - Finished Spring Data repository scanning in 144ms. Found 4 repository interfaces.
+15:09:44.538 [INFO] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker][Method postProcessAfterInitialization] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a0405b25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:09:45.089 [INFO] [com.zaxxer.hikari.HikariDataSource][Method getConnection] - HikariPool-1 - Starting...
+15:09:45.496 [INFO] [com.zaxxer.hikari.HikariDataSource][Method getConnection] - HikariPool-1 - Start completed.
+15:09:45.698 [INFO] [o.h.jpa.internal.util.LogHelper][Method logPersistenceUnitInformation] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15:09:45.865 [INFO] [org.hibernate.Version][Method logVersion] - HHH000412: Hibernate Core {5.3.10.Final}
+15:09:45.870 [INFO] [org.hibernate.cfg.Environment][Method <clinit>] - HHH000206: hibernate.properties not found
+15:09:46.240 [INFO] [o.h.annotations.common.Version][Method <clinit>] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+15:09:46.574 [INFO] [org.hibernate.dialect.Dialect][Method <init>] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+15:09:48.318 [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean][Method buildNativeEntityManagerFactory] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:09:50.253 [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration][Method openEntityManagerInViewInterceptor] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:09:50.542 [INFO] [o.s.s.web.DefaultSecurityFilterChain][Method <init>] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c6d7256, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ffcdc9b, org.springframework.security.web.header.HeaderWriterFilter@1860b107, org.springframework.web.filter.CorsFilter@48188d23, org.springframework.security.web.authentication.logout.LogoutFilter@70eb94d7, com.example.demo.sercurity.JWTAuthenticationFilter@4860627a, com.example.demo.sercurity.JWTAuthenticationVerficationFilter@67f0bf7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5020e5ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69abeb14, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e88e14, org.springframework.security.web.session.SessionManagementFilter@4136b193, org.springframework.security.web.access.ExceptionTranslationFilter@90394d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6219006a]
+15:09:51.495 [INFO] [o.s.s.c.ThreadPoolTaskExecutor][Method initialize] - Initializing ExecutorService 'applicationTaskExecutor'
+15:09:52.220 [INFO] [c.e.demo.SareetaApplicationTests][Method logStarted] - Started SareetaApplicationTests in 12.433 seconds (JVM running for 15.02)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.166 s - in com.example.demo.SareetaApplicationTests
+[INFO] Running com.example.demo.controllers.HandlerExceptionControllerTest
+15:09:52.649 [ERROR] [c.e.demo.controllers.UserController][Method handlerException] - HandlerExceptionController Test exception
+15:09:52.656 [ERROR] [c.e.demo.controllers.UserController][Method handlerException] - HandlerExceptionController trace [com.example.demo.controllers.HandlerExceptionControllerTest.testHandlerException(HandlerExceptionControllerTest.java:20), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source), java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source), java.base/java.lang.reflect.Method.invoke(Unknown Source), org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59), org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12), org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56), org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17), org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26), org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306), org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100), org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366), org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103), org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63), org.junit.runners.ParentRunner$4.run(ParentRunner.java:331), org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79), org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329), org.junit.runners.ParentRunner.access$100(ParentRunner.java:66), org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293), org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306), org.junit.runners.ParentRunner.run(ParentRunner.java:413), org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365), org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273), org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238), org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159), org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384), org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345), org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126), org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.example.demo.controllers.HandlerExceptionControllerTest
+[INFO] Running com.example.demo.controllers.CartControllerTest
+15:09:53.213 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - Begin add item to cart
+15:09:53.215 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - Add cart to username: user1
+15:09:53.219 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - End add item to cart
+15:09:53.227 [INFO] [c.e.demo.controllers.CartController][Method removeFromCart] - Begin remove item in cart
+15:09:53.227 [ERROR] [c.e.demo.controllers.CartController][Method removeFromCart] - Quantity remove more than quantity exists
+15:09:53.233 [INFO] [c.e.demo.controllers.CartController][Method removeFromCart] - Begin remove item in cart
+15:09:53.233 [ERROR] [c.e.demo.controllers.CartController][Method removeFromCart] - Username user2 remove in cart not found
+15:09:53.234 [INFO] [c.e.demo.controllers.CartController][Method removeFromCart] - Begin remove item in cart
+15:09:53.234 [ERROR] [c.e.demo.controllers.CartController][Method removeFromCart] - Item Id 2 remove in cart not found
+15:09:53.239 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - Begin add item to cart
+15:09:53.240 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - Add cart to username: user2
+15:09:53.240 [ERROR] [c.e.demo.controllers.CartController][Method addToCart] - Username user2 add to cart not found
+15:09:53.248 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - Begin add item to cart
+15:09:53.249 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - Add cart to username: user1
+15:09:53.249 [ERROR] [c.e.demo.controllers.CartController][Method addToCart] - Item Id 2 add to cart not found
+15:09:53.250 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - Begin add item to cart
+15:09:53.252 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - Add cart to username: user1
+15:09:53.253 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - End add item to cart
+15:09:53.253 [INFO] [c.e.demo.controllers.CartController][Method removeFromCart] - Begin remove item in cart
+15:09:53.254 [INFO] [c.e.demo.controllers.CartController][Method removeFromCart] - End remove item in cart
+15:09:53.257 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - Begin add item to cart
+15:09:53.257 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - Add cart to username: user1
+15:09:53.260 [INFO] [c.e.demo.controllers.CartController][Method addToCart] - End add item to cart
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.495 s - in com.example.demo.controllers.CartControllerTest
+[INFO] Running com.example.demo.controllers.OrderControllerTest
+15:09:53.378 [INFO] [c.e.demo.controllers.OrderController][Method submit] - Begin order with username user2
+15:09:53.388 [ERROR] [c.e.demo.controllers.OrderController][Method submit] - Username user2 order not found
+15:09:53.391 [INFO] [c.e.demo.controllers.OrderController][Method submit] - Begin order with username user1
+15:09:53.391 [INFO] [c.e.demo.controllers.OrderController][Method submit] - Username user1 order successfully
+15:09:53.391 [INFO] [c.e.demo.controllers.OrderController][Method submit] - End order with username user1
+15:09:53.396 [ERROR] [c.e.demo.controllers.OrderController][Method getOrdersForUser] - Username user2 order not found
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 s - in com.example.demo.controllers.OrderControllerTest
+[INFO] Running com.example.demo.controllers.UserControllerTest
+15:09:53.463 [INFO] [c.e.demo.controllers.UserController][Method findByUserName] - Find by username: user1
+15:09:53.466 [INFO] [c.e.demo.controllers.UserController][Method findById] - Find by user Id: 1
+15:09:53.471 [INFO] [c.e.demo.controllers.UserController][Method createUser] - Begin create user with username user1
+15:09:53.471 [INFO] [c.e.demo.controllers.UserController][Method createUser] - User created successfully
+15:09:53.471 [INFO] [c.e.demo.controllers.UserController][Method createUser] - End create user with username user1
+15:09:53.472 [INFO] [c.e.demo.controllers.UserController][Method createUser] - Begin create user with username user1
+15:09:53.474 [INFO] [c.e.demo.controllers.UserController][Method findById] - Find by user Id: 0
+15:09:53.475 [INFO] [c.e.demo.controllers.UserController][Method createUser] - Begin create user with username user1
+15:09:53.476 [INFO] [c.e.demo.controllers.UserController][Method createUser] - Begin create user with username user1
+15:09:53.489 [INFO] [c.e.demo.controllers.UserController][Method findByUserName] - Find by username: user2
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in com.example.demo.controllers.UserControllerTest
+[INFO] Running com.example.demo.controllers.ItemControllerTest
+15:09:53.500 [INFO] [c.e.demo.controllers.ItemController][Method getItemById] - Find by item Id: 1
+15:09:53.501 [INFO] [c.e.demo.controllers.ItemController][Method getItemById] - Find by item Id: 0
+15:09:53.502 [INFO] [c.e.demo.controllers.ItemController][Method getItems] - Get all item
+15:09:53.505 [INFO] [c.e.demo.controllers.ItemController][Method getItemsByName] - Find by item name: Some item other
+15:09:53.506 [INFO] [c.e.demo.controllers.ItemController][Method getItemsByName] - Find by item name: Item 1
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in com.example.demo.controllers.ItemControllerTest
+15:09:53.556 [INFO] [o.s.s.c.ThreadPoolTaskExecutor][Method shutdown] - Shutting down ExecutorService 'applicationTaskExecutor'
+15:09:53.564 [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean][Method destroy] - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:09:53.576 [INFO] [com.zaxxer.hikari.HikariDataSource][Method close] - HikariPool-1 - Shutdown initiated...
+15:09:53.592 [INFO] [com.zaxxer.hikari.HikariDataSource][Method close] - HikariPool-1 - Shutdown completed.
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-war-plugin:3.2.2:war (default-war) @ auth-course ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [auth-course] in [/var/jenkins_home/workspace/UdacityProject4/starter_code/target/auth-course-0.0.1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Webapp assembled in [518 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/UdacityProject4/starter_code/target/auth-course-0.0.1-SNAPSHOT.war
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.5.RELEASE:repackage (repackage) @ auth-course ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  34.883 s
+[INFO] Finished at: 2023-07-13T15:09:59Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
